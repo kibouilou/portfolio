@@ -60,29 +60,27 @@ nav li :hover{
     width: 100px;
     height: 50px;
 }
-div .icones{
-    display: flex;
-    width: 20px;
-    gap: 8px;
-}
 section{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    gap: 20px;
-    padding: 0%;
-    margin: 0px;
-    border-radius: 1px;
-    border:4px solid rgb(38, 37, 40);
+display: flex;
+justify-content:flex-start;
+width: 100%;
+align-items: center;
+gap: 20px;
+ padding: 0%;
+margin: 0px;
+border-radius: 1px;
+    border:2px solid rgb(71, 6, 200);
 }
-#croissant{
-    background-image: url(assets/images/croissant.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-    background-size: 100%;
+#croissants{
+  background-image:
+   url(assets/images/croissant.png);
+   background-repeat: no-repeat;
+   background-size: 90%;
+   background-position: center center;    margin: 0;
+  width: 100vm;
+    height: 50vw;
+    padding: 20px;
+     margin: 20px;
 }
 .container-carte{
     display: flex;
@@ -91,7 +89,7 @@ section{
     border-radius: 1px;
     flex-direction: column; 
     gap: 20px;
-    width: 100%; 
+    width: 50%; 
 }
 .container-carte h1{
     display: flex;
@@ -128,14 +126,6 @@ section{
     align-items: flex-start;
 }
 
-.bouton{
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    font-size: 12px;
-    font-family: Arial, sans-serif;
-
-}
 .bouton-premier {
     display: flex;
     justify-content: center;
@@ -144,7 +134,6 @@ section{
     border: 2px solid;
     background: blueviolet;
 }
-
 .bouton-premier a{
     color:white;
    align-items: center;
@@ -165,69 +154,115 @@ section{
     background: black;
 
 }
-.article-one{
+.commentaire{
     display: flex;
     justify-content: center;
     align-items: center;
     background: gray;
     border-radius: 1Opx;
     gap: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
-.carte-liste {
+.commentaire ul{
     display: flex;
     background: gray;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 50%;
 }
-
-.carte {
-    width: 50%;
+.article{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    gap: 5px;
+    width: 50%;
 }
-
-.carte img{
+.article img{
+ width: 100%;
+ height: 50%;
+  object-fit: cover;
+  padding: 10px;
+  margin: 10px;
+  gap: 20px;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    background: linear-gradient(90deg, #92979b,#185ef4,#b68d40);
+    align-items: center;
+    font-family: "playfair disply", serif;
+    background-size: 200%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: shine 15s linear infinite;
+    margin-top: 40px;
+}
+@keyframes shine {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.article2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100px;
+    border:4px solid red;
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
+    width: 100%;
+    height: 50%;
+}
+img{
     display: flex;
     width: 50%;
-    height: 5%;
-    padding: 5px;
-}
-
-#croissants{
-
-   background-image: url(assets/images/croissant.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center center;
-    margin: 0;
-    width: 100vw;
-    height: 60vw;
-    padding: 20px;
+    height: 50%;
+    object-fit: cover;
+    padding: 10px;
     margin: 20px;
+
+   }
+div{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+div h2{
+   display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    background: linear-gradient(90deg, #f07e96,#185ef4,#b68d40);
+    align-items: center;
+    font-family: "playfair disply", serif;
+    background-size: 200%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: shine 15s linear infinite;
+    margin-top: 40px;
+}
+@keyframes shine {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 
-.article-one li{
- display: flex;
-    justify-content: flex-end;
-}
-.article-two{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-}
-.all-images{
-    display: flex;
-    height: 30%;
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-    gap:5px;
 
-}
+
+
+
+
+
+
+
