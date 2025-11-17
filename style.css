@@ -3,25 +3,38 @@
     font-family: Arial, sans-serif;
     color: black;
     justify-content: center;
-    background: blue; 
 }
 nav{
-     display: flex;
+    display: flex;
     background: white;
     text-align: center;
     width: 100%;
     height: 50%;
-    gap: 18px;
+    gap: 3px;
     margin: 0;
-    align-items: center;
     padding: 2px;
     margin: 0px;
     border-radius: 1px;
     border: 2px solid black;
-    justify-content: space-evenly;
-    box-shadow: 16px teal;
+    justify-content: flex-start;
+    align-items: center;
 }
-    
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 25px;
+    border-radius: 100px;
+    border: 2px solid red;
+} 
+.icones-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    gap: 5px;
+    flex-direction: row;
+    }
 a{
    display: flex;
     justify-content: center;
@@ -31,7 +44,7 @@ a{
     text-decoration: none;
     color: black;
 }
-ul{
+.menu{
     display: flex;
     justify-content: space-between;
     border-radius: 1px;
@@ -48,40 +61,35 @@ ul{
 nav li :hover{
     background-color: blueviolet
 }
-.logo img{
-    width: 49px;
-    height: 50px;
-}
 
-.liste-icones {
-   display: flex;
-    justify-content: center;
-    gap: 6px;
-    width: 100px;
-    height: 50px;
-}
 section{
 display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
     align-items: center;
     gap: 20px;
     padding: 0%;
     margin: 0px;
     border-radius: 1px;
     border: 2px solid rgb(71, 6, 200);
-    flex-direction: row;
+    flex-direction: column;
+    background-image: url(assets/images/moroccan-flower-dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
 }
 #croissants{
   background-image:
-   url(assets/images/croissant.png);
+   url(assets/images/fond\ blan.jpg);
    background-repeat: no-repeat;
    background-size: 90%;
-   background-position: center center;    margin: 0;
-  width: 100vm;
-    height: 50vw;
-    padding: 20px;
-     margin: 20px;
+   background-position: center center;   
+    margin: 0;
+  width: 100%;
+    height: 100%;
+    padding: 10px;
+     margin: 10px;
 }
 .container-carte{
     display: flex;
@@ -119,39 +127,45 @@ display: flex;
 
 .boutons {
     display: flex;
-    gap: 2px;
+    gap: 10px;
     flex-direction: row;
     align-content: flex-end;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    background-image: none;
+    text-align: center;
 }
 
-.bouton-premier {
+.bouton-1{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     background-color: rgba(0, 0, 0, 0.676);
     border-radius: 4px;
     border: 2px solid;
     background: blueviolet;
 }
-.bouton-premier a{
+.bouton-1 a{
+    justify-content: center;
     color:white;
    align-items: center;
    
 }
-.bouton-second{
+.bouton-2{
     color: black;
     justify-content: center;
     background-color:white;
     border-radius: 5px;
     border: 2px solid black;
 }
-.bouton-premier:hover {
+.bouton-1:hover {
     background: black;
     cursor: auto;
 }
-.bouton-second:hover {
+#icon{
+    width: 10%;
+}
+.bouton-2:hover {
     background: black;
 
 }
@@ -172,22 +186,22 @@ display: flex;
     align-items: center;
     gap: 15px;
 }
-.article-carte{
+.article-carte1{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 1Opx;
+    border-radius: 5px;
     padding: 0px;
     margin: 0px;
     gap: 5px;
-    width: 50%;
+    width: 100%;
 }
 .article img{
  width: 100%;
  height: 50%;
   object-fit: cover;
-  padding: 10px;
+  padding: 0px;
   margin: 10px;
   gap: 20px;
 }
@@ -203,7 +217,7 @@ div h2{
     align-items: center;
     gap: 10px;
     font-size: 2em;
-    background: linear-gradient(90deg, #92979b,#185ef4,#b68d40);
+    background: linear-gradient(90deg, #92979b,white,#b68d40);
     align-items: center;
     font-family: "playfair disply", serif;
     background-size: 200%;
@@ -211,6 +225,7 @@ div h2{
     -webkit-background-clip:text;
     animation: shine 15s linear infinite;
     margin-top: 40px;
+
 }
 @keyframes shine {
   from { transform: scaleX(0); }
@@ -231,14 +246,15 @@ div h2{
 }
 img{
     display: flex;
-    width: 50%;
+    width: 100%;
+    height: 50%;
     object-fit: cover;
     padding: 1px;
-    margin:0px;
+    margin:15px;
     border-radius: 100px;
-    border: 5px solid black;
+    border: px solid black;
+    }
 
-   }
 div{
    display: flex;
     align-items: center;
@@ -254,7 +270,6 @@ div{
     font-family: "playfair disply", serif;
     background-size: 200%;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip:text;
     animation: shine 15s linear infinite;
     margin-top: 40px;
     border-radius: 10px;
