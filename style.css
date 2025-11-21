@@ -177,7 +177,6 @@ div a:hover{
 }
 .container-carte p{
     display: flex;
-    color: rgb(104, 65, 245);
     font-size: 2em;
     background: springgreen;
     align-items: center;
@@ -285,7 +284,7 @@ div{
     font-family: "playfair disply", serif;
     background-size: 200%;
     -webkit-text-fill-color: transparent;
-    animation: shine 15s linear infinite;
+    animation: shine 15s linear;
     margin-top: 40px;
     border-radius: 10px;
     border: 2px solid black;
@@ -299,7 +298,9 @@ section{
     justify-content: center;
     align-items: flex-start;
     text-align: justify;
-    height: 30%;;
+    height: 30%;
+    border-radius: 1px;
+    border: 2px solid black;
 
 }
 h1{
@@ -324,7 +325,7 @@ div{
     gap: 10px;
 }
 .image-carte2{
-    width: 100%;
+   width: 100%;
     height: 50%;
     gap: 10px;
 }
@@ -334,49 +335,79 @@ div{
     align-items: center;
     gap: 5px;
     border-radius: 4px;
+    width: 100%;
 }
 .info{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     border-radius: 2px;
-    border: 2px solid blueviolet;
+   
 }
-.info p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.info1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:4px;
-    border: 2px solid black;
-}
-.info2{
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:4px;
-    border: 2px solid black;
-}
-.info3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:4px;
-    border: 2px solid black;
-}
 .article-carte.photo{
     width: 100%;
     height: 100%;
     object-position: 50%;
+}
+.selection-carte{
+   display: flex;
+    justify-content: flex-start;
+    background: white;
+    color: #000;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    border-radius: 1px;
+    border: 2px solid black;
+    flex-direction: column;
 
 }
+.selection-carte1{
+   display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    flex-direction: column;
+}
+.selection-carte2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+h3{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}  
+.p{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    gap: 15px;  
+    font-size: 10px;
+    animation: forwards;
+}
+#icon-carte{
+    width: 25px;
+    height: 25px;
+}
+#h2{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+}
+
+
+
+
 
 
 
