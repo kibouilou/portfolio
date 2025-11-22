@@ -72,7 +72,6 @@ ul a:hover{
     width: 100vh;
     height: 100vh;
     flex-direction: column;
-    background-image: url(assets/images/moroccan-flower-dark.png);
 }
 h1{
     display: flex;
@@ -367,28 +366,35 @@ div.carte-femme {
     align-items: flex-end;
     flex-direction: row;
     justify-content: center;
+
+}
+div.cartes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: justify;
+    width: 30%;
+    flex-direction: row-reverse;
 }
 
-.container3{
+h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    width: 100%;
-    background: #f07e96;
+    gap: 10px;
 }
-.etoiles{
-    width: 10px;
-    height: 10px;
-
-}
-h4{
+.cartes{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 50%;
 }
+
+
+
+
+
+
+
     
 
 
