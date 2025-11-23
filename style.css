@@ -369,15 +369,15 @@ div.carte-femme {
 
 }
 div.cartes{
-    display: flex;
-    justify-content: flex-end;
+   display: flex;
+    justify-content: space-evenly;
     align-items: center;
     text-align: justify;
-    width: 30%;
+    width: 60%;
     flex-direction: row-reverse;
 }
 
-h3{
+h6{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,6 +388,36 @@ h3{
     justify-content: center;
     align-items: center;
 }
+.carte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.carte2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+.section1 h4{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
 
 
 
